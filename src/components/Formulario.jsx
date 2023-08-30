@@ -115,7 +115,7 @@ const Formulario = ({ agregar, setAlert }) => {
 
 
         <Button type='submit' variant='primary' >Agregar</Button>
-        {alert.msg && <Alert color={alert.color}>{alert.msg} </Alert> }
+        
       </form>
     
     </div>
