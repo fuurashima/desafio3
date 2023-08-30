@@ -111,12 +111,11 @@ const Formulario = ({ agregar, setAlert }) => {
           onChange={(e) => setTelefono(e.target.value)}
           value={telefono}
         />
-        </div>
-        
-        
+        </div>       
 
 
         <Button type='submit' variant='primary' >Agregar</Button>
+        {alert.msg && <Alert color={alert.color}>{alert.msg} </Alert> }
       </form>
     
     </div>
