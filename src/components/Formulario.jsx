@@ -15,7 +15,7 @@ const Formulario = ({ agregar, setAlert }) => {
     if (id === '' || nombre === '' || correo === '' || edad === '' || cargo === '' || telefono === '' ) {
       setAlert({
         error: true,
-        msg: 'Debes llenar todos los datos',
+        msg: 'Completa todos los campos!',
         color: 'danger'
       })
       return;
@@ -34,7 +34,7 @@ const Formulario = ({ agregar, setAlert }) => {
 
     setAlert({
       error: false,
-      msg: 'Usuario añadido',
+      msg: 'Colaborador agregado!',
       color: 'success'
     })
   }
@@ -114,7 +114,7 @@ const Formulario = ({ agregar, setAlert }) => {
         </div>       
 
 
-        <Button type='submit' variant='primary' >Agregar</Button>
+        <Button type='submit' variant='primary' >Agregar Colaborador</Button>
         
       </form>
     
