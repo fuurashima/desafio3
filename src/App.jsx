@@ -35,8 +35,9 @@ function App() {
           <Listado listado={filtrados} />
 
           <Formulario  agregar={agregar} setAlert={setAlert} />
-          {alert.msg && <Alert color={alert.color}>{alert.msg} </Alert> }
-        </div>        
+          
+        </div>     
+        {alert.msg && <Alert color={alert.color}>{alert.msg} </Alert> }
       </div>
     </>
   )
